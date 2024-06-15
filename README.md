@@ -32,4 +32,6 @@ Additionally, you can add the following information to describe the theme in mor
 - Theme demo: Provide a link to the theme demo so that customers can preview the theme's interface and features.
 - Wish you success with the BabyLove theme!
 
-- ![Uploading screencapture-wcm-static-test-82-2024-06-14-10_55_31.png…]()
+
+  ![screencapture-wcm-static-test-82-2024-06-14-10_55_31](https://github.com/vanhuong04/Babyland_theme_WP/assets/155074947/aa1adcc4-c1dc-4160-b996-ac2ced9c0ca1)
+
