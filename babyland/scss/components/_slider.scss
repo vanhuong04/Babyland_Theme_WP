@@ -1,0 +1,159 @@
+@use "../utilities/variables" as ut;
+.slider {
+  height: 500px;
+  background-color: ut.$main-3-color;
+  padding: 20px 164px;
+  overflow: hidden;
+
+  &__img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 450px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+
+  &__title {
+    color: ut.$main-1-color;
+    font-family: ut.$cherry-font;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    max-width: 555px;
+    text-wrap: wrap;
+  }
+
+  &__button {
+    color: #fff;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    /* btt */
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    text-transform: uppercase;
+    width: 164px;
+    height: 59px;
+    flex-shrink: 0;
+    background-color: ut.$main-1-color;
+    border-radius: 50px;
+    padding: 10px 15px;
+    cursor: pointer;
+
+    &:hover {
+      color: ut.$main-2-color;
+    }
+  }
+}
+
+.conveyor {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    overflow: hidden;
+    padding: 20px 0px;
+    left: 100%;
+    position: relative;
+    transition: all;
+    animation: slideRight 10s infinite normal;
+  }
+
+  &__text {
+    color: ut.$main-1-color;
+    text-wrap: nowrap;
+    /* Text */
+    font-family: ut.$cherry-font;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+
+  0% {
+    left: 0%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1279px) {
+  .slider {
+    padding: 10px 20px;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__button {
+      height: auto;
+    }
+
+    &__title {
+      font-size: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider {
+    padding: 10px 20px;
+    height: 300px;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__button {
+      height: auto;
+      padding: 5px 10px;
+      font-size: 12px;
+      width: 100px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+  }
+
+  .conveyor {
+    // padding: 8px;
+    gap: 30px;
+
+    &__container {
+      padding: 8px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+  }
+}

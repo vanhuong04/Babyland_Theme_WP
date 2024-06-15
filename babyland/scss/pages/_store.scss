@@ -1,0 +1,16 @@
+@use "../utilities/variables" as ut;
+
+article#post-8 {
+  padding: 10px 20px;
+}
+
+select.orderby {
+  padding: 10px 20px;
+  border-radius: 4px;
+
+  option {
+    &:hover {
+      background-color: ut.$main-1-color !important;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use "../utilities/variables" as ut;
+
+article#post-82 {
+  padding: 10px 20px;
+}
+
+button.single_add_to_cart_button.button.alt {
+  background-color: ut.$main-1-color;
+}
+
+p.comment-form-comment {
+  padding: 10px 20px;
+}
+
+p.comment-form-author {
+  padding: 5px 20px;
+}
+
+p.comment-form-email {
+  padding: 5px 20px;
+}
+
+p.comment-form-url {
+  padding: 5px 20px;
+}
+p.comment-form-cookies-consent {
+  padding: 5px 20px;
+}
+
+p.form-submit {
+  margin-left: 20px;
+}

@@ -1,0 +1,140 @@
+@use "../utilities/variables" as ut;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 101px 162px;
+  background-color: ut.$main-1-color;
+
+  &__two {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    p {
+      color: #fff;
+      font-family: "Cherry Bomb One";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  &__three {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    p {
+      color: #fff;
+      font-family: "Cherry Bomb One";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      max-width: 359px;
+      text-wrap: wrap;
+    }
+
+    input {
+      background-color: transparent;
+      color: #fff;
+      font-feature-settings: "clig" off, "liga" off;
+      padding: 5px 10px;
+      border: none;
+      outline: 1px solid ut.$main-2-color;
+
+      /* Text */
+      font-family: "Inter";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 200% */
+    }
+  }
+}
+
+section#nav_menu-2 {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+ul#menu-main-menu {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+h2.menu-footer {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Text */
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  text-transform: capitalize;
+}
+
+li.menu-item.menu-item-type-post_type.menu-item-object-page {
+  a {
+    color: #fff;
+    font-feature-settings: "clig" off, "liga" off;
+
+    /* Text */
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+    text-decoration: none;
+  }
+  list-style-type: none;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1279px) {
+  .footer {
+    padding: 10px 20px;
+  }
+
+  ul#menu-main-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+  }
+
+  ul#menu-main-menu {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 0fr 1fr 0fr;
+    padding: 10px 20px;
+
+    &__one {
+      display: none;
+    }
+
+    &__two {
+      display: none;
+    }
+
+    &__three {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}

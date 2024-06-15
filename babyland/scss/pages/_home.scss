@@ -1,0 +1,716 @@
+@use "../utilities/variables" as ut;
+
+.category {
+  padding: 30px 164px;
+  background-color: ut.$main-3-color;
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: ut.$main-1-color;
+
+    /* Text */
+    font-family: "Cherry Bomb One";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 68px; /* 106.25% */
+    text-transform: uppercase;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__sub-title {
+    color: ut.$dark-color;
+    font-feature-settings: "clig" off, "liga" off;
+
+    /* Text */
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 164px;
+    height: 59px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: ut.$main-1-color;
+    color: #fff;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+
+    /* btt */
+    font-family: "Inter";
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: ut.$main-2-color;
+    }
+  }
+
+  &__img {
+    width: 550px;
+    height: 569px;
+    flex-shrink: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+ul.products.columns-10 {
+  display: flex;
+  overflow-x: auto;
+}
+
+.bestSeller {
+  padding: 30px 164px;
+  background-color: ut.$main-3-color;
+
+  &__heading {
+    color: ut.$main-1-color;
+    text-align: center;
+    margin-bottom: 40px;
+
+    /* Text */
+    font-family: "Cherry Bomb One";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 68px; /* 106.25% */
+    text-transform: uppercase;
+  }
+}
+
+.banner {
+  position: relative;
+  height: 670px;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    img {
+      width: 100%;
+      height: 670px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 28px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &__title {
+    p {
+      color: #fff;
+      text-align: center;
+      font-family: "Cherry Bomb One";
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  &__button {
+    border-radius: 50px;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+
+    /* btt */
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      background: #fff;
+      color: ut.$main-1-color;
+      border: 2px solid ut.$main-1-color;
+    }
+  }
+}
+
+.four {
+  background-color: ut.$main-3-color;
+  padding: 85px 164px;
+  &__heading {
+    margin-bottom: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      text-align: center;
+      color: ut.$main-1-color;
+      text-align: center;
+      width: 1052px;
+      text-wrap: wrap;
+
+      /* Text */
+      font-family: "Cherry Bomb One";
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 68px; /* 106.25% */
+      text-transform: uppercase;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__one {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-content: center;
+    justify-content: center;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 255px;
+    text-wrap: wrap;
+    text-align: center;
+    color: ut.$dark-color;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+
+    /* Text */
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+  }
+
+  &__title {
+    text-align: center;
+    color: ut.$main-1-color;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+
+    /* Text */
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+    text-transform: capitalize;
+  }
+}
+
+.arrivals {
+  background-color: ut.$main-3-color;
+  padding: 85px 164px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+  }
+
+  &__heading {
+    color: ut.$main-1-color;
+
+    /* Text */
+    font-family: "Cherry Bomb One";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 68px; /* 106.25% */
+    text-transform: uppercase;
+  }
+
+  &__button {
+    a {
+      border-radius: 50px;
+      background: ut.$main-1-color;
+      color: #fff;
+      text-align: center;
+      font-feature-settings: "clig" off, "liga" off;
+      padding: 10px 20px;
+
+      /* btt */
+      font-family: "Inter";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}
+
+.contact {
+  background-color: ut.$main-3-color;
+  padding: 40px 164px;
+  display: flex;
+  align-items: center;
+  gap: 85px;
+  &__right {
+    img {
+      flex-shrink: 0;
+      border-radius: 50px;
+      background: #d9d9d9;
+      overflow: hidden;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title {
+    p {
+      color: ut.$main-1-color;
+      max-width: 635px;
+      text-wrap: wrap;
+
+      /* Text */
+      font-family: "Cherry Bomb One";
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 68px; /* 106.25% */
+      text-transform: uppercase;
+    }
+  }
+
+  &__day {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    i {
+      color: ut.$main-1-color;
+    }
+  }
+
+  &__day--content {
+    p {
+      color: ut.$dark-color;
+      font-feature-settings: "clig" off, "liga" off;
+
+      /* Text */
+      font-family: "Inter";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 200% */
+    }
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    i {
+      color: ut.$main-1-color;
+    }
+  }
+
+  &__phone--content {
+    p {
+      color: ut.$dark-color;
+      font-feature-settings: "clig" off, "liga" off;
+
+      /* Text */
+      font-family: "Inter";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 200% */
+    }
+  }
+
+  &__button {
+    a {
+      color: #fff;
+      text-align: center;
+      font-feature-settings: "clig" off, "liga" off;
+      padding: 15px 20px;
+      background-color: ut.$main-1-color;
+      border-radius: 50px;
+      /* btt */
+      font-family: "Inter";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}
+
+.thumbnail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  background-color: ut.$main-3-color;
+  padding: 40px 0px 10px 0px;
+  img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .category {
+    padding: 10px 20px;
+
+    &__top {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &__title {
+      font-size: 34px;
+      line-height: 38px;
+    }
+
+    &__sub-title {
+      font-size: 12px;
+    }
+
+    &__button {
+      font-size: 12px;
+      width: auto;
+      height: auto;
+      padding: 8px 0px;
+    }
+
+    &__img {
+      height: 300px;
+      width: auto;
+    }
+  }
+
+  ul.products.columns-10 {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+  }
+
+  li.product-category.product {
+    // width: 20% !important;
+  }
+
+  .woocommerce .products ul::after,
+  .woocommerce .products ul::before,
+  .woocommerce ul.products::after,
+  .woocommerce ul.products::before {
+    content: " ";
+    display: none;
+  }
+
+  .bestSeller {
+    height: 300px;
+    padding: 10px 20px;
+
+    &__heading {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .woocommerce span.onsale {
+    font-size: 0.3em;
+  }
+
+  ul.products.columns-4 {
+    display: flex;
+    gap: 30px;
+
+    li {
+      width: 130%;
+      min-height: 50px !important;
+    }
+  }
+
+  .banner {
+    height: 300px;
+
+    &__img {
+      img {
+        height: 300px;
+      }
+    }
+
+    &__title {
+      p {
+        font-size: 30px;
+      }
+    }
+
+    &__button {
+      padding: 5px 10px;
+    }
+  }
+
+  .four {
+    padding: 15px 20px;
+
+    &__one {
+      flex-wrap: nowrap;
+    }
+    &__heading {
+      p {
+        width: auto;
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .arrivals {
+    display: none;
+  }
+
+  .contact {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__title {
+      p {
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+
+    &__day--content {
+      p {
+        font-size: 12px;
+      }
+    }
+
+    &__phone--content {
+      p {
+        font-size: 12px;
+      }
+    }
+
+    &__button {
+      a {
+        font-size: 12px;
+        padding: 10px 10px;
+        width: 100%;
+      }
+    }
+  }
+
+  .thumbnail {
+    overflow-x: auto;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1279px) {
+  .category {
+    padding: 10px 20px;
+
+    &__top {
+      // display: flex;
+      // flex-direction: column;
+      // gap: 0;
+    }
+
+    &__title {
+      font-size: 34px;
+      line-height: 38px;
+    }
+
+    &__sub-title {
+      font-size: 16px;
+    }
+
+    &__button {
+      font-size: 16px;
+      width: auto;
+      height: auto;
+      padding: 8px 0px;
+    }
+
+    &__img {
+      height: 300px;
+      width: auto;
+    }
+  }
+  ul.products.columns-10 {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+  }
+
+  li.product-category.product {
+    // width: 20% !important;
+  }
+
+  .woocommerce .products ul::after,
+  .woocommerce .products ul::before,
+  .woocommerce ul.products::after,
+  .woocommerce ul.products::before {
+    content: " ";
+    display: none;
+  }
+
+  .bestSeller {
+    height: 400px;
+    padding: 10px 20px;
+
+    &__heading {
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+  }
+
+  ul.products.columns-4 {
+    display: flex;
+    gap: 30px;
+
+    li {
+      width: 100%;
+      min-height: 50px !important;
+    }
+  }
+
+  .four {
+    padding: 15px 20px;
+
+    &__heading {
+      p {
+        width: auto;
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+
+    &__container {
+      gap: 20px;
+      justify-content: start;
+      overflow-x: auto;
+    }
+  }
+
+  .arrivals {
+    padding: 10px 20px;
+
+    &__body {
+    }
+  }
+
+  ul.products.columns-4 {
+    gap: 10px;
+  }
+
+  .contact {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__title {
+      p {
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+
+    &__day--content {
+      p {
+        font-size: 12px;
+      }
+    }
+
+    &__phone--content {
+      p {
+        font-size: 12px;
+      }
+    }
+
+    &__button {
+      a {
+        font-size: 12px;
+        padding: 10px 10px;
+        width: 100%;
+      }
+    }
+  }
+
+  .thumbnail {
+    overflow-x: auto;
+  }
+}

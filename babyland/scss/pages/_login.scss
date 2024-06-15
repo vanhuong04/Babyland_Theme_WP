@@ -1,0 +1,38 @@
+@use "../utilities/variables" as ut;
+
+article#post-11 {
+  padding: 10px 20px;
+}
+
+h1.entry-title {
+  color: ut.$main-1-color;
+}
+
+.u-column1.col-1 {
+  h2 {
+    color: ut.$main-2-color;
+  }
+}
+
+.u-column2.col-2 {
+  h2 {
+    color: ut.$main-2-color;
+  }
+}
+
+button.woocommerce-button.button.woocommerce-form-login__submit {
+  background-color: ut.$main-1-color;
+  color: white;
+}
+
+button.woocommerce-Button.woocommerce-button.button.woocommerce-form-register__submit {
+  background-color: ut.$main-1-color;
+  color: white;
+}
+
+p.woocommerce-LostPassword.lost_password {
+  a {
+    color: ut.$main-1-color;
+    text-decoration: none;
+  }
+}

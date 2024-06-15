@@ -1,0 +1,71 @@
+@use "../utilities/variables" as ut;
+
+h2.woocommerce-loop-category__title {
+  color: ut.$main-1-color;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Text */
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  text-transform: capitalize;
+}
+
+li.product-category {
+  img {
+    overflow: hidden;
+    border-radius: 100rem;
+  }
+}
+
+mark.count {
+  display: none;
+}
+
+li.product.type-product.status-publish {
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid ut.$main-1-color;
+  background: var(--ffffff, #fff);
+  min-height: 365px;
+}
+
+img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+  border-bottom: 1px solid ut.$main-1-color;
+}
+
+h2.woocommerce-loop-product__title {
+  text-align: center;
+  color: ut.$main-1-color;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Text */
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  text-transform: capitalize;
+}
+
+span.price {
+  text-align: center;
+  color: ut.$dark-color;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Text */
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+}
+
+.woocommerce span.onsale {
+  background-color: ut.$main-1-color;
+}

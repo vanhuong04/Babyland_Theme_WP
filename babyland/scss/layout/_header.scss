@@ -1,0 +1,234 @@
+@use "../utilities/variables" as ut;
+
+.header {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 162px;
+    background-color: ut.$main-1-color;
+  }
+
+  &__adress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+
+    &--location {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ffffff, #fff);
+      gap: 10px;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+    }
+
+    &--phone {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      color: var(--ffffff, #fff);
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+    }
+  }
+
+  &__socail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    > a {
+      color: white;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.header {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  &__main {
+    background-color: ut.$main-3-color;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 162px;
+  }
+
+  &__acount {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+    color: ut.$dark-color;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: "Inter";
+
+    /* Text */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+  }
+
+  &__ac {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: ut.$dark-color;
+    text-decoration: none;
+  }
+
+  &__cart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: ut.$dark-color;
+    text-decoration: none;
+  }
+}
+
+#primary-menu {
+  gap: 20px;
+
+  li {
+    // transition: all 0.3s;
+    a {
+      color: ut.$dark-color;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: "Inter";
+
+      /* Text */
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 200% */
+
+      &:hover {
+        color: ut.$main-2-color;
+      }
+    }
+    transition: all 0.1s;
+    border-bottom: 2px solid ut.$main-3-color;
+
+    &:hover {
+      border-bottom: 2px solid ut.$main-2-color;
+    }
+  }
+}
+
+.site-title {
+  a {
+    text-decoration: none;
+    color: ut.$main-1-color;
+    font-family: "Cherry Bomb One";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  button.menu-toggle {
+    background-color: ut.$main-1-color;
+    color: white;
+  }
+
+  .header {
+    justify-content: start;
+    &__top {
+      display: none;
+    }
+
+    &__main {
+      background-color: ut.$main-3-color;
+      display: grid;
+      grid-template-columns: 0fr 1fr 1fr;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    &__acount {
+      font-size: 13px;
+      gap: 15px;
+    }
+
+    ul#primary-menu {
+      li {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .site-title {
+    a {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1279px) {
+  .header {
+    &__top {
+      padding: 10px 20px;
+    }
+
+    &__main {
+      padding: 10px 20px;
+    }
+
+    &__adress {
+      gap: 12px;
+      &--location {
+        font-size: 9px;
+      }
+
+      &--phone {
+        font-size: 9px;
+      }
+    }
+
+    &__acount {
+      font-size: 12px;
+      gap: 20px;
+    }
+  }
+
+  .site-title {
+    a {
+      font-size: 25px;
+    }
+  }
+
+  ul#primary-menu {
+    gap: 10px;
+    li {
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}
